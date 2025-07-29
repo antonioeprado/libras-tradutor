@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tradutor para Libras</title>
+    <link href="./styles/style.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #00ff00;">
+
+    <header>
+        <h1>Tradutor para Libras</h1>
+    </header>
+    <main>
+        <ol>
+            <li>Clique em <strong>Choose File</strong></li>
+            <li>Na nova caixa de diálogo, selecione o arquivo de texto (.txt) a ser mostrado</li>
+            <li>Clique em <strong>Enviar</strong></li>
+            <li>Abra o Widget do VLibras clicando no botão azul do lado direito</li>
+            <li>Clique no ícone de engrenagem no canto superior esquerdo do Widget</li>
+            <li>Ajuste o slider de <strong>Opacidade</strong> para 0</li>
+            <li><strong>Ainda vou pesquisar a personalização do avatar. É apenas um protótipo!!</strong></li>
+        </ol>
+
+        <label for="txt-input">Selecione um arquivo de texto:</label>
+        <input id="txt-input" type="file" name="txt-input" value="Arquivo txt" accept="txt">
+        <button id="submit" type="submit">Enviar</button>
+
+        <div id="preview">
+        </div>
+    </main>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+</body>
+
+<script src="./javascript/index.js" type="module"></script>
+
+</html>
