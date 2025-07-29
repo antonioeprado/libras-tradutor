@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.main-content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 15px 100px;
+    width: 60%;
+}
+
+.input-holder {
+    display: inherit;
+    flex-flow: row nowrap;
+    padding: 10px;
+    margin: 12px;
+}
+
+#txt-input {
+    padding-left: 10px;
+}
+
+#submit {
+    width: 80px;
+    padding: 12px;
+    margin: 5px;
+    align-self: center;
+}

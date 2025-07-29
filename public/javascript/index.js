@@ -1,5 +1,4 @@
 const submitButton = document.getElementById("submit")
-// const files = document.getElementById("txt-input").files
 const preview = document.getElementById("preview")
 
 submitButton.addEventListener("click", (event) => {

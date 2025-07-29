@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tradutor para Libras</title>
-    <link href="./styles/style.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
 </head>
 
 <body style="background-color: #00ff00;">
@@ -13,7 +13,7 @@
     <header>
         <h1>Tradutor para Libras</h1>
     </header>
-    <main>
+    <main class="main-content">
         <ol>
             <li>Clique em <strong>Choose File</strong></li>
             <li>Na nova caixa de diálogo, selecione o arquivo de texto (.txt) a ser mostrado</li>
@@ -24,8 +24,10 @@
             <li><strong>Ainda vou pesquisar a personalização do avatar. É apenas um protótipo!!</strong></li>
         </ol>
 
-        <label for="txt-input">Selecione um arquivo de texto:</label>
-        <input id="txt-input" type="file" name="txt-input" value="Arquivo txt" accept="txt">
+        <div class="input-holder">
+            <label for="txt-input">Selecione um arquivo de texto:</label>
+            <input id="txt-input" type="file" name="txt-input" value="Arquivo txt" accept="txt">
+        </div>
         <button id="submit" type="submit">Enviar</button>
 
         <div id="preview">
